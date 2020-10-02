@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
     }
   }
     for(int i=0;i<tamanho;i++){//nesse for, faço todas combinações de somas horizontais e verticais possiveis
-      for(int j=0;j<tamanho;j++){//a casa ocupada pela torre (que não será somada) é casa que fica no cruzamento da linha e da coluna
+      for(int j=0;j<tamanho;j++){//a casa ocupada pela torre (que não será somada) é a casa que fica no cruzamento da linha e da coluna
         somaAtual=somasHorizontais[i]+somasVerticais[j]-2*(casas[i][j]);//como a casa é somada na linha e também coluna, retiro duas vezes
         if(somaAtual>maior)maior=somaAtual;//comparação para verificar se a somaAtual é a maior
       }
